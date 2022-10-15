@@ -47,7 +47,9 @@ function game() {
     let playerSelection = prompt(
       "Pleae select ande write your input: Rock, Paper, or Scissors."
     );
-    if (!computerSelectionArray.contains(playerSelection)) {
+    if (computerSelectionArray.contains(playerSelection)) {
+      console.log(`Player Selected ${playerSelection}`);
+    } else {
       i--;
       console.log(`Invalid input`);
     }
