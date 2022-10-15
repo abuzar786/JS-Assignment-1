@@ -43,16 +43,16 @@ game function is a loop function and it runs 5 times
   */
 function game() {
   for (let i = 0; i < totalRounds; i++) {
-    let computerSelection = computerPlay();
     let playerSelection = prompt(
       "Pleae select ande write your input: Rock, Paper, or Scissors."
     );
-    if (computerSelectionArray.contains(playerSelection)) {
+    if (computerSelectionArray.includes(playerSelection)) {
       console.log(`Player Selected ${playerSelection}`);
     } else {
       i--;
       console.log(`Invalid input`);
     }
+    let computerSelection = computerPlay();
     playRound(playerSelection, computerSelection);
     console.log(result);
 
