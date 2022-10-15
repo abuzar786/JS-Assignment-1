@@ -51,6 +51,7 @@ function game() {
     } else {
       i--;
       console.log(`Invalid input`);
+      continue;
     }
     let computerSelection = computerPlay();
     playRound(playerSelection, computerSelection);
