@@ -3,7 +3,7 @@ Main JS Assignment
 */
 
 /* Initialize the Computer and Player Score and Message */
-const computerSelectionArray = ["Rock", "Paper", "Scissors"];
+const computerSelectionArray = ["rock", "paper", "scissors"];
 totalRounds = 5;
 let playerSore = 0;
 let computerScore = 0;
@@ -46,9 +46,7 @@ function game() {
     let playerSelection = prompt(
       "Pleae select ande write your input: Rock, Paper, or Scissors."
     );
-    if (computerSelectionArray.includes(playerSelection)) {
-      console.log(`Player Selected ${playerSelection}`);
-    } else {
+    if (!computerSelectionArray.includes(playerSelection)) {
       i--;
       console.log(`Invalid input`);
       continue;
