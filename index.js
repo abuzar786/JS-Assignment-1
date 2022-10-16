@@ -44,7 +44,7 @@ game function is a loop function and it runs 5 times
 function game() {
   for (let i = 0; i < totalRounds; i++) {
     let playerSelection = prompt(
-      "Pleae select ande write your input: Rock, Paper, or Scissors."
+      "Pleae select ande write your input: rock, paper, or scissors."
     );
     if (!computerSelectionArray.includes(playerSelection)) {
       i--;
